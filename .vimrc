@@ -21,6 +21,8 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'easymotion/vim-easymotion'
 call plug#end()
 
+syntax enable
+set background=dark
 colorscheme solarized
 
 let g:used_javascript_libs = 'React'
