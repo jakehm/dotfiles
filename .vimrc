@@ -1,3 +1,4 @@
+set backupcopy=yes
 set expandtab
 set shiftwidth=2
 set softtabstop=2
@@ -7,18 +8,24 @@ set number
 set showcmd
 set cursorline
 set showmatch
-set background=dark
+set incsearch
+set ignorecase
+set smartcase
+set hlsearch
+:nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+
 
 call plug#begin('~/.vim/plugged')
-Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'javascript.jsx'] }
+Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'mxw/vim-jsx', { 'for': ['javascript', 'javascript.jsx'] }
+Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'altercation/vim-colors-solarized'
 Plug 'easymotion/vim-easymotion'
 call plug#end()
 
-syntax enable
-
 colorscheme solarized
+
+let g:used_javascript_libs = 'React'
 
 let g:EasyMotion_do_mapping = 0
 nmap s <Plug>(easymotion-overwin-f)
