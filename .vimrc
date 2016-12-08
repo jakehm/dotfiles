@@ -57,4 +57,5 @@ let g:ctrlp_working_path_mode = 'r'
 " remapping esc key
 imap jk <ESC>
 imap kj <ESC>
+imap jj <ESC>
 
