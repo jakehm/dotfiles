@@ -1,7 +1,9 @@
-set expandtab
-set shiftwidth=2
-set softtabstop=2
+" use tabs over spaces
 set autoindent
+set noexpandtab
+set shiftwidth=2
+set tabstop=2
+
 set textwidth=80
 set number
 set showcmd
@@ -51,3 +53,8 @@ let g:ctrlp_custom_ignore = {
 " This makes a lot of sense if you are working on a project that 
 " is in version control. It also supports works with .svn, .hg, .bzr.
 let g:ctrlp_working_path_mode = 'r'
+
+" remapping esc key
+imap jk <ESC>
+imap kj <ESC>
+
