@@ -20,6 +20,7 @@ Plug 'mxw/vim-jsx'
 Plug 'altercation/vim-colors-solarized'
 Plug 'easymotion/vim-easymotion'
 Plug 'kien/ctrlp.vim'
+Plug 'vim-airline/vim-airline'
 call plug#end()
 
 let g:jsx_ext_required = 0
