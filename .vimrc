@@ -23,7 +23,7 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'easymotion/vim-easymotion'
 Plug 'kien/ctrlp.vim'
 Plug 'vim-airline/vim-airline'
-Plug 'scrooloose/nerdtree.git'
+Plug 'scrooloose/nerdtree'
 call plug#end()
 
 let g:jsx_ext_required = 0
