@@ -33,8 +33,8 @@ colorscheme solarized
 
 let g:EasyMotion_do_mapping = 0
 
-nmap s <Plug>(easymotion-overwin-f)
-nmap s <Plug>(easymotion-overwin-f2)
+nmap <C-s> <Plug>(easymotion-overwin-f)
+nmap <C-s> <Plug>(easymotion-overwin-f2)
 
 let g:EasyMotion_smartcase = 1
 
@@ -68,5 +68,5 @@ map <C-n> :NERDTreeToggle<CR>
 " Close vim when nerdtree is the only open window
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 "Make smaller
-let g:NERDTreeWinSize = 40 
+let g:NERDTreeWinSize = 31 
 
